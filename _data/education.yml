@@ -1,0 +1,16 @@
+# Education timeline on the home page (shown in the order listed).
+
+- degree: "MSc, Engineering Mathematics and Computational Science"
+  school: "Chalmers University of Technology"
+  period: "Sep 2024 – Jun 2026"
+  note: "Master thesis at Göteborg Energi: long-term electricity demand forecasting with XGBoost, LSTM and Bayesian statistics."
+
+- degree: "Erasmus exchange, Statistics and Operations Research"
+  school: "Polytechnic University of Catalonia (UPC)"
+  period: "Sep 2025 – Jan 2026"
+  badge: "Exchange"
+  note: "Included a survival analysis project on clinical trial data (Kaplan–Meier, Weibull and Cox models)."
+
+- degree: "BSc, Engineering Mathematics"
+  school: "Chalmers University of Technology"
+  period: "Sep 2021 – Jun 2024"

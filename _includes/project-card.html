@@ -1,0 +1,16 @@
+{% assign p = include.project %}
+<article class="card{% if p.placeholder %} card--placeholder{% endif %}" data-tilt>
+  <div class="card__media">
+    <img src="{{ p.cover | relative_url }}" alt="{{ p.cover_alt | default: '' | escape }}" width="800" height="500" loading="lazy">
+    {% if p.placeholder %}<span class="card__badge">Placeholder</span>{% endif %}
+  </div>
+  <div class="card__body">
+    <p class="card__cat">{{ p.category | escape }}</p>
+    <h3 class="card__title"><a class="card__link" href="{{ p.url | relative_url }}">{{ p.title | escape }}</a></h3>
+    <p class="card__summary">{{ p.summary | escape }}</p>
+    <ul class="chips" aria-label="Tools and topics">
+      {% for t in p.tags %}<li>{{ t | escape }}</li>{% endfor %}
+    </ul>
+    <p class="card__cta">Read the write-up <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></p>
+  </div>
+</article>

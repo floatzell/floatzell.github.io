@@ -1,0 +1,74 @@
+---
+layout: default
+---
+{% assign all_projects = site.projects | sort: "order" %}
+{% assign idx = -1 %}
+{% for p in all_projects %}{% if p.url == page.url %}{% assign idx = forloop.index0 %}{% endif %}{% endfor %}
+{% assign prev_idx = idx | minus: 1 %}
+{% assign next_idx = idx | plus: 1 %}
+
+<article class="project">
+  <header class="project-hero">
+    <div class="container">
+      <a class="back" href="{{ '/' | relative_url }}#projects"><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg> All projects</a>
+      <p class="kicker">{{ page.category | escape }}{% if page.placeholder %} · <em>placeholder</em>{% endif %}</p>
+      <h1>{{ page.title | escape }}</h1>
+      <p class="lede">{{ page.summary | escape }}</p>
+
+      <dl class="meta">
+        {% if page.period %}<div><dt>Period</dt><dd>{{ page.period | escape }}</dd></div>{% endif %}
+        {% if page.context %}<div><dt>Context</dt><dd>{{ page.context | escape }}</dd></div>{% endif %}
+        {% if page.tools %}<div><dt>Tools</dt><dd>{{ page.tools | escape }}</dd></div>{% endif %}
+      </dl>
+
+      <div class="project-actions">
+        {% if page.code_url and page.code_url != "" %}
+          <a class="btn btn--primary" href="{{ page.code_url }}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg> Code</a>
+        {% else %}
+          <span class="btn btn--primary" aria-disabled="true"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg> Code · coming soon</span>
+        {% endif %}
+        {% if page.demo_url and page.demo_url != "" %}
+          <a class="btn btn--ghost" href="{{ page.demo_url }}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Live demo</a>
+        {% else %}
+          <span class="btn btn--ghost" aria-disabled="true"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg> Demo · coming soon</span>
+        {% endif %}
+        {% if page.notebook_url and page.notebook_url != "" %}
+          <a class="btn btn--ghost" href="{{ page.notebook_url }}" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-notebook"/></svg> Notebook</a>
+        {% endif %}
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <figure class="cover">
+      <img src="{{ page.cover | relative_url }}" alt="{{ page.cover_alt | default: '' | escape }}" width="800" height="500">
+    </figure>
+
+    <div class="project-layout">
+      <div class="prose">
+        {{ content }}
+      </div>
+      <aside class="toc" data-toc hidden aria-label="On this page">
+        <p class="toc__title">On this page</p>
+        <ol></ol>
+      </aside>
+    </div>
+
+    <nav class="pager" aria-label="More projects">
+      {% if idx > 0 %}
+        {% assign prev_p = all_projects[prev_idx] %}
+        <a class="pager__link pager__prev" href="{{ prev_p.url | relative_url }}">
+          <span class="pager__label"><svg class="icon" aria-hidden="true"><use href="#i-arrow-left"/></svg> Previous project</span>
+          <span class="pager__title">{{ prev_p.title | escape }}</span>
+        </a>
+      {% endif %}
+      {% if next_idx < all_projects.size %}
+        {% assign next_p = all_projects[next_idx] %}
+        <a class="pager__link pager__next" href="{{ next_p.url | relative_url }}">
+          <span class="pager__label">Next project <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+          <span class="pager__title">{{ next_p.title | escape }}</span>
+        </a>
+      {% endif %}
+    </nav>
+  </div>
+</article>

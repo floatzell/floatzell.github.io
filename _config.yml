@@ -1,0 +1,67 @@
+# ==========================================================================
+# William Karlsson · Data Science Portfolio — Jekyll configuration
+# Edit the values below; most of the site reads from here.
+# ==========================================================================
+
+# ---- Identity --------------------------------------------------------------
+title: "Welcome to my Data Science portfolio, I'm William"   # hero heading on the home page
+short_title: "William Karlsson · Data Science Portfolio"     # browser tab title
+name: "William Karlsson"
+tagline: "Data Scientist · Python · Machine Learning"
+description: "Data science portfolio of William Karlsson, Engineering Mathematics graduate from Chalmers: machine learning, forecasting and statistical modelling projects with full write-ups."
+location: "Gothenburg, Sweden"
+lang: en
+encoding: utf-8
+
+# ---- URLs ------------------------------------------------------------------
+# Repo must be named floatzell.github.io for this to be your root site.
+# If you ever host it as a project repo instead, set baseurl to "/repo-name".
+url: "https://floatzell.github.io"
+baseurl: ""
+
+# ---- Links -----------------------------------------------------------------
+cv: /assets/William_Karlsson_CV.pdf
+
+social:
+  github: "https://github.com/floatzell"
+  linkedin: "https://www.linkedin.com/in/william-karlsson-56697a20a/"
+  email: "william.i.tenhult@gmail.com"
+
+# ---- Header navigation (anchors on the home page) ---------------------------
+# "anchor" must match a section id in index.md.
+nav:
+  - { label: "About",      anchor: "about" }
+  - { label: "Tech stack", anchor: "tech-stack" }
+  - { label: "Projects",   anchor: "projects" }
+  - { label: "Education",  anchor: "education" }
+  - { label: "Currently",  anchor: "currently" }
+  - { label: "Contact",    anchor: "contact" }
+
+# ---- Projects collection (one write-up page per file in _projects/) ---------
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# ---- Build -----------------------------------------------------------------
+plugins:
+  - jekyll-sitemap
+
+markdown: kramdown
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
+  - .sass-cache
+  - .jekyll-cache

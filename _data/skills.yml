@@ -1,0 +1,20 @@
+# Tech stack cards on the home page. Add, remove or reorder freely.
+# Only list what you are comfortable discussing in an interview.
+
+- title: "Languages"
+  items: ["Python", "SQL", "R", "MATLAB", "C/C++"]
+
+- title: "Data & analysis"
+  items: ["NumPy", "Pandas", "PySpark", "SciPy", "Statsmodels", "Databases", "Big Data", "Data management", "JSON"]
+
+- title: "Machine learning"
+  items: ["Scikit-learn", "PyTorch", "XGBoost", "Deep learning", "LSTM", "Classification", "Clustering"]
+
+- title: "Statistics"
+  items: ["Bayesian statistics", "PyMC", "PyTensor", "Statistical modelling", "Survival analysis", "Time-series forecasting"]
+
+- title: "Language & vision"
+  items: ["NLP", "LLMs", "Text analysis", "Image analysis", "Prompt engineering"]
+
+- title: "Workflow"
+  items: ["Git", "GitHub", "Visualization"]

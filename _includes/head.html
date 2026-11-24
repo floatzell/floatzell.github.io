@@ -1,0 +1,24 @@
+{% if page.url == '/' %}
+  {% assign page_title = site.short_title %}
+{% else %}
+  {% capture page_title %}{{ page.title }} · {{ site.name }}{% endcapture %}
+{% endif %}
+{% assign page_desc = page.summary | default: site.description %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page_title | escape }}</title>
+<meta name="description" content="{{ page_desc | escape }}">
+<meta name="author" content="{{ site.name | escape }}">
+<meta name="theme-color" content="#EEEBD3">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.name | escape }}">
+<meta property="og:title" content="{{ page_title | escape }}">
+<meta property="og:description" content="{{ page_desc | escape }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta name="twitter:card" content="summary">
+
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<script>document.documentElement.classList.add('js');</script>
