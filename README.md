@@ -34,7 +34,8 @@ Copy any file in `_projects/`, give it a new `order` number, a cover image in `a
 
 ## Placeholders still to replace
 
-- Logo and favicon: `assets/images/logo.svg`, `assets/images/favicon.svg`
+- Section bands: the soft silver waves on Tech stack, Education and Currently are `assets/images/wave1.svg`–`wave3.svg` (About me and Projects are plain white).
+- Logo and favicon: `assets/images/logo.svg`, `assets/images/favicon.svg` (browser tab). Also generated from the same "w": `assets/favicon.ico`, `assets/favicon-32.png`, `assets/apple-touch-icon.png`, `assets/icon-192.png`, `assets/icon-512.png` and `assets/site.webmanifest`. If you redraw the "w", re-export those PNGs from `assets/images/favicon.svg` (the Apple icon uses `icon-square.svg`).
 - Profile photo: upload a square image to `assets/images/` and set `profile_image:` in `_config.yml`
 - Project cover images: upload to `assets/images/projects/`, then change the `cover:` line at the top of the project's file in `_projects/` (instructions are in each file)
 - Project 3 and 4: `_projects/project-three.md`, `_projects/project-four.md`

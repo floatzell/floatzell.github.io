@@ -225,7 +225,7 @@ h1, h2, h3, h4 { line-height: 1.15; }
 .portrait { position: relative; margin: 0; width: min(100%, 400px); justify-self: center; aspect-ratio: 1; }
 .portrait__shape {
   position: absolute; inset: -5% -7% 7% 7%;
-  background: linear-gradient(135deg, var(--sun) 0%, var(--sun-light) 55%, var(--mist) 100%);
+  background: linear-gradient(135deg, var(--sun) 0%, #F2FFC6 100%);   /* lime only: no grey mixed in, so it never turns olive */
   border-radius: 42% 58% 38% 62% / 55% 40% 60% 45%;
   transform: rotate(-6deg); animation: morph 14s ease-in-out infinite alternate;
 }
@@ -526,3 +526,10 @@ body { background:#FFFFFF; }
 .contact__mail { background-image: linear-gradient(var(--lime), var(--lime)); }
 .contact__mail:hover { color:#0A0A0A; }
 .on-dark .btn:hover { background: var(--lime); border-color: var(--lime); }
+
+
+/* ===== Section bands: none on 01/03, one soft silver wave on 02/04/05 ===== */
+#about, #projects { background: var(--white); }
+#tech-stack { background: url(/assets/images/wave1.svg) 0 0 / 100% 100% no-repeat, var(--white); }
+#education  { background: url(/assets/images/wave2.svg) 0 0 / 100% 100% no-repeat, var(--white); }
+#currently  { background: url(/assets/images/wave3.svg) 0 0 / 100% 100% no-repeat, var(--white); }
