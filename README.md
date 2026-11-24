@@ -1,6 +1,6 @@
 # floatzell.github.io
 
-Source for William Karlsson's data science portfolio: a custom Jekyll site (no theme dependency) in white, sun yellow, near-black ink, midnight violet and mist grey, set in Aptos.
+Source for William Karlsson's data science portfolio: a custom Jekyll site (no theme dependency) in soft silver gradients, a lime accent (#ECFFB3) and near-black text, set in Aptos.
 
 ## Publish it
 

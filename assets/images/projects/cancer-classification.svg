@@ -2,15 +2,15 @@
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#FFFFFF"/>
-      <stop offset="1" stop-color="#FFECC2"/>
+      <stop offset="1" stop-color="#F3FFD0"/>
     </linearGradient>
   </defs>
   <rect width="800" height="500" fill="url(#bg)"/>
-  <ellipse cx="250" cy="260" rx="200" ry="160" fill="#FFDA85" opacity=".35"/>
-  <ellipse cx="610" cy="255" rx="115" ry="100" fill="#1C0920" opacity=".08"/>
+  <ellipse cx="250" cy="260" rx="200" ry="160" fill="#ECFFB3" opacity=".35"/>
+  <ellipse cx="610" cy="255" rx="115" ry="100" fill="#0A0A0A" opacity=".08"/>
 
   <!-- common group: many points -->
-  <g fill="#FFDA85" stroke="#1C0920" stroke-opacity=".45" stroke-width="2">
+  <g fill="#ECFFB3" stroke="#0A0A0A" stroke-opacity=".45" stroke-width="2">
     <circle cx="170" cy="200" r="10"/><circle cx="205" cy="175" r="10"/><circle cx="245" cy="160" r="10"/>
     <circle cx="290" cy="172" r="10"/><circle cx="330" cy="200" r="10"/><circle cx="150" cy="250" r="10"/>
     <circle cx="192" cy="232" r="10"/><circle cx="232" cy="212" r="10"/><circle cx="272" cy="222" r="10"/>
@@ -23,12 +23,12 @@
   </g>
 
   <!-- rare group: few points -->
-  <g fill="#1C0920">
+  <g fill="#0A0A0A">
     <circle cx="565" cy="205" r="10"/><circle cx="605" cy="190" r="10"/><circle cx="645" cy="222" r="10"/>
     <circle cx="580" cy="252" r="10"/><circle cx="618" cy="268" r="10"/><circle cx="656" cy="292" r="10"/>
     <circle cx="588" cy="305" r="10"/><circle cx="632" cy="328" r="10"/><circle cx="415" cy="330" r="10"/>
   </g>
 
   <!-- decision boundary -->
-  <path d="M470 30 C 420 160, 520 340, 450 470" fill="none" stroke="#1C0920" stroke-width="3.5" stroke-dasharray="12 9" stroke-linecap="round"/>
+  <path d="M470 30 C 420 160, 520 340, 450 470" fill="none" stroke="#0A0A0A" stroke-width="3.5" stroke-dasharray="12 9" stroke-linecap="round"/>
 </svg>

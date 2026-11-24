@@ -3,18 +3,18 @@
        and set profile_image in _config.yml to its file name. -->
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#FFDA85"/>
-      <stop offset=".6" stop-color="#FFECC2"/>
-      <stop offset="1" stop-color="#E0DDE3"/>
+      <stop offset="0" stop-color="#ECFFB3"/>
+      <stop offset=".6" stop-color="#F3FFD0"/>
+      <stop offset="1" stop-color="#D5D9DF"/>
     </linearGradient>
   </defs>
   <rect width="600" height="600" fill="url(#bg)"/>
-  <circle cx="300" cy="300" r="228" fill="none" stroke="#1C0920" stroke-width="4" stroke-dasharray="4 16" stroke-linecap="round" opacity=".55"/>
+  <circle cx="300" cy="300" r="228" fill="none" stroke="#0A0A0A" stroke-width="4" stroke-dasharray="4 16" stroke-linecap="round" opacity=".55"/>
   <!-- camera icon -->
-  <g transform="translate(300 262)" fill="none" stroke="#1C0920" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(300 262)" fill="none" stroke="#0A0A0A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
     <path d="M-78 -36h38l14 -22h52l14 22h38a14 14 0 0 1 14 14v84a14 14 0 0 1 -14 14h-156a14 14 0 0 1 -14 -14v-84a14 14 0 0 1 14 -14z"/>
     <circle cx="0" cy="22" r="32"/>
   </g>
-  <text x="300" y="392" text-anchor="middle" font-family="Aptos, 'Segoe UI', system-ui, sans-serif" font-size="38" font-weight="700" fill="#1C0920">Your photo here</text>
-  <text x="300" y="430" text-anchor="middle" font-family="Aptos, 'Segoe UI', system-ui, sans-serif" font-size="22" fill="#1C0920" opacity=".7">square · 800 px or larger</text>
+  <text x="300" y="392" text-anchor="middle" font-family="Aptos, 'Segoe UI', system-ui, sans-serif" font-size="38" font-weight="700" fill="#0A0A0A">Your photo here</text>
+  <text x="300" y="430" text-anchor="middle" font-family="Aptos, 'Segoe UI', system-ui, sans-serif" font-size="22" fill="#0A0A0A" opacity=".7">square · 800 px or larger</text>
 </svg>

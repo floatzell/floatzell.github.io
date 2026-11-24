@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="W signature">
   <!-- Favicon: dark signature-style "w" on a yellow circle, traced from William's own signature. -->
-  <circle cx="32" cy="32" r="32" fill="#FFDA85"/>
-  <path d="M10 38 L14.5 30 C14.6 36 14.4 43 15.5 47 C16.3 50 19.2 49.5 20.2 46 C21 42 21.5 37.5 23 34 C24.5 42 28 50 34 52.5 C40 55 47 52.5 50 44.5 C52.2 38 51 28 44 21.5 C41 18.8 37 18 33.5 19.5" fill="none" stroke="#1C0920" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="32" r="32" fill="#ECFFB3"/>
+  <path d="M10 38 L14.5 30 C14.6 36 14.4 43 15.5 47 C16.3 50 19.2 49.5 20.2 46 C21 42 21.5 37.5 23 34 C24.5 42 28 50 34 52.5 C40 55 47 52.5 50 44.5 C52.2 38 51 28 44 21.5 C41 18.8 37 18 33.5 19.5" fill="none" stroke="#0A0A0A" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
