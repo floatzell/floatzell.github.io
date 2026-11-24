@@ -23,8 +23,10 @@ title: Home
       <p class="hero__lead">Engineering Mathematics graduate from Chalmers who builds data-driven, analytical solutions with meaningful impact, from long-horizon power demand forecasting to classification, portfolio optimization and image analysis.</p>
       <div class="hero__actions">
         <a class="btn btn--primary btn--lg" href="#projects">See my projects <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
-        <a class="btn btn--ghost btn--sm" href="{{ site.cv | relative_url }}" target="_blank" rel="noopener">CV <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a>
-        <a class="btn btn--ghost btn--sm" href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+        <div class="hero__actions-secondary">
+          <a class="btn btn--ghost btn--sm" href="{{ site.cv | relative_url }}" target="_blank" rel="noopener">CV <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a>
+          <a class="btn btn--ghost btn--sm" href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+        </div>
       </div>
       <ul class="hero__meta">
         <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> {{ site.location }}</li>
@@ -70,7 +72,7 @@ title: Home
     <header class="section__head reveal">
       <p class="kicker"><span>02</span> Tech stack</p>
       <h2>The toolbox.</h2>
-      <p>The languages, libraries and methods I reach for most. Hover over the chips, they're friendly.</p>
+      <p>The languages, libraries and methods I reach for most.</p>
     </header>
     <div class="grid grid--skills">
       {% for group in site.data.skills %}
