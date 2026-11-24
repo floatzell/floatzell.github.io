@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-label="Illustration: stock price lines with a forecast cone">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFECC2"/>
+    </linearGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFDA85" stop-opacity=".75"/>
+      <stop offset="1" stop-color="#FFDA85" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+
+  <!-- grid -->
+  <g stroke="#1C0920" stroke-opacity=".09" stroke-width="2">
+    <line x1="50" y1="100" x2="760" y2="100"/><line x1="50" y1="180" x2="760" y2="180"/>
+    <line x1="50" y1="260" x2="760" y2="260"/><line x1="50" y1="340" x2="760" y2="340"/>
+    <line x1="50" y1="420" x2="760" y2="420"/>
+  </g>
+  <line x1="520" y1="60" x2="520" y2="450" stroke="#1C0920" stroke-opacity=".3" stroke-width="2" stroke-dasharray="6 8"/>
+
+  <!-- area under the portfolio line -->
+  <polygon points="50,360 93,345 136,340 179,318 222,310 265,288 308,280 351,258 394,246 437,226 480,214 520,196 520,450 50,450" fill="url(#area)"/>
+
+  <!-- individual equities -->
+  <g fill="none" stroke="#1C0920" stroke-opacity=".3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="50,330 93,320 136,335 179,300 222,310 265,285 308,295 351,260 394,270 437,240 480,250 520,235"/>
+    <polyline points="50,380 93,365 136,370 179,340 222,355 265,330 308,320 351,335 394,300 437,310 480,285 520,290"/>
+    <polyline points="50,250 93,270 136,255 179,285 222,265 265,300 308,280 351,310 394,295 437,320 480,300 520,315"/>
+    <polyline points="50,200 93,215 136,190 179,205 222,180 265,200 308,170 351,185 394,165 437,175 480,150 520,160"/>
+    <polyline points="50,420 93,405 136,410 179,395 222,400 265,380 308,390 351,370 394,375 437,355 480,365 520,350"/>
+    <polyline points="50,300 93,285 136,300 179,270 222,285 265,255 308,265 351,240 394,250 437,225 480,230 520,215"/>
+  </g>
+
+  <!-- optimized portfolio -->
+  <polyline points="50,360 93,345 136,340 179,318 222,310 265,288 308,280 351,258 394,246 437,226 480,214 520,196" fill="none" stroke="#1C0920" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- forecast cone -->
+  <polygon points="520,196 560,175 620,150 690,125 760,95 760,260 690,238 620,222 560,208" fill="#FFDA85" opacity=".5"/>
+  <polyline points="520,196 560,191 620,186 690,181 760,177" fill="none" stroke="#1C0920" stroke-width="4" stroke-dasharray="10 8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="520" cy="196" r="9" fill="#1C0920" stroke="#FFFFFF" stroke-width="4"/>
+</svg>

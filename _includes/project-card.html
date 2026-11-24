@@ -1,7 +1,7 @@
 {% assign p = include.project %}
 <article class="card{% if p.placeholder %} card--placeholder{% endif %}" data-tilt>
   <div class="card__media">
-    <img src="{{ p.cover | relative_url }}" alt="{{ p.cover_alt | default: '' | escape }}" width="800" height="500" loading="lazy">
+    {% if p.cover %}<img src="{{ p.cover | relative_url }}" alt="{{ p.cover_alt | default: '' | escape }}" width="800" height="500" loading="lazy" style="object-position: {{ p.cover_position | default: 'center' }}">{% endif %}
     {% if p.placeholder %}<span class="card__badge">Placeholder</span>{% endif %}
   </div>
   <div class="card__body">

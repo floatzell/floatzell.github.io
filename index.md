@@ -18,13 +18,13 @@ title: Home
   <div class="blob blob--two" aria-hidden="true"></div>
   <div class="container hero__grid">
     <div class="hero__text">
-      <p class="chip chip--sage">{{ site.tagline }}</p>
+      <p class="chip chip--sun">{{ site.tagline }}</p>
       <h1>{{ site.title | replace: 'William', '<span class="mark">William</span>' }}</h1>
       <p class="hero__lead">Engineering Mathematics graduate from Chalmers who builds data-driven, analytical solutions with meaningful impact, from long-horizon power demand forecasting to classification, portfolio optimization and image analysis.</p>
       <div class="hero__actions">
-        <a class="btn btn--primary" href="#projects">See my projects <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
-        <a class="btn btn--ghost" href="{{ site.cv | relative_url }}" target="_blank" rel="noopener">CV <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a>
-        <a class="btn btn--ghost" href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+        <a class="btn btn--primary btn--lg" href="#projects">See my projects <svg class="icon" aria-hidden="true"><use href="#i-arrow-down"/></svg></a>
+        <a class="btn btn--ghost btn--sm" href="{{ site.cv | relative_url }}" target="_blank" rel="noopener">CV <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg></a>
+        <a class="btn btn--ghost btn--sm" href="{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
       </div>
       <ul class="hero__meta">
         <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> {{ site.location }}</li>
@@ -34,11 +34,8 @@ title: Home
 
     <figure class="portrait">
       <div class="portrait__shape" aria-hidden="true"></div>
-      <!-- HEADSHOT PLACEHOLDER: replace assets/images/headshot-placeholder.svg (or change the src) with a square photo -->
-      <img src="{{ '/assets/images/headshot-placeholder.svg' | relative_url }}" alt="Portrait of William Karlsson" width="480" height="480">
-      <span class="sticker sticker--a" aria-hidden="true">Forecasting</span>
-      <span class="sticker sticker--b" aria-hidden="true">Bayesian</span>
-      <span class="sticker sticker--c" aria-hidden="true">Classification</span>
+      <!-- YOUR PHOTO: upload a square image to assets/images/ and set profile_image in _config.yml (no need to edit this file) -->
+      <img src="{{ site.profile_image | relative_url }}" alt="Portrait of William Karlsson" width="480" height="480">
     </figure>
   </div>
 </section>
@@ -93,7 +90,7 @@ title: Home
 <section class="section" id="projects" data-section>
   <div class="container">
     <header class="section__head reveal">
-      <p class="kicker"><span>03</span> Featured projects</p>
+      <p class="kicker"><span>03</span> Projects</p>
       <h2>Things I've built.</h2>
       <p>Each project has its own write-up covering the problem, the data, the methods, the results and what I'd improve next, with code and a demo alongside.</p>
     </header>
@@ -166,7 +163,7 @@ title: Home
 
 <section class="contact on-dark" id="contact" data-section>
   <div class="container">
-    <p class="kicker"><span>06</span> Get in touch</p>
+    <p class="kicker"><span>06</span> Contact</p>
     <h2>Let's talk data.</h2>
     <p class="contact__lead">Have a role, a collaboration or just a question about one of my projects? I'd love to hear from you.</p>
     <div class="contact__mail-row">

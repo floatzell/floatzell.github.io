@@ -1,6 +1,6 @@
 # floatzell.github.io
 
-Source for William Karlsson's data science portfolio: a custom Jekyll site (no theme dependency) in eggshell, sage and midnight violet, set in Aptos.
+Source for William Karlsson's data science portfolio: a custom Jekyll site (no theme dependency) in white, sun yellow, ink purple and mist grey, set in Aptos.
 
 ## Publish it
 
@@ -30,13 +30,13 @@ bundle exec jekyll serve
 
 ### Adding a project
 
-Copy any file in `_projects/`, give it a new `order` number, a cover image in `assets/images/`, and fill in the front matter. It appears on the home page automatically. Set `code_url` and `demo_url` when they exist; until then the buttons read "coming soon". Delete `placeholder: true` once the project is real.
+Copy any file in `_projects/`, give it a new `order` number, a cover image in `assets/images/projects/`, and fill in the front matter. It appears on the home page automatically. Set `code_url` and `demo_url` when they exist; until then the buttons read "coming soon". Delete `placeholder: true` once the project is real.
 
 ## Placeholders still to replace
 
-- Logo and favicon: `assets/images/logo-placeholder.svg`, `assets/images/favicon.svg`
-- Headshot: `assets/images/headshot-placeholder.svg` (or change the `src` in `index.md`)
-- Project covers: `assets/images/project-*.svg` (swap in screenshots or real charts)
+- Logo and favicon: `assets/images/logo.svg`, `assets/images/favicon.svg`
+- Profile photo: upload a square image to `assets/images/` and set `profile_image:` in `_config.yml`
+- Project cover images: upload to `assets/images/projects/`, then change the `cover:` line at the top of the project's file in `_projects/` (instructions are in each file)
 - Project 3 and 4: `_projects/project-three.md`, `_projects/project-four.md`
 - Every dashed, striped `class="todo"` snippet in `index.md` and `_projects/` (search for `class="todo"`)
 - `code_url`, `demo_url`, `notebook_url` in each project's front matter

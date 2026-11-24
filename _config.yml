@@ -11,6 +11,9 @@ tagline: "Data Scientist · Python · Machine Learning"
 description: "Data science portfolio of William Karlsson, Engineering Mathematics graduate from Chalmers: machine learning, forecasting and statistical modelling projects with full write-ups."
 location: "Gothenburg, Sweden"
 lang: en
+
+# Your profile photo (square, at least 800 x 800 px). Upload it to assets/images/ and put its file name here.
+profile_image: /assets/images/headshot-placeholder.svg
 encoding: utf-8
 
 # ---- URLs ------------------------------------------------------------------
@@ -30,7 +33,7 @@ social:
 # ---- Header navigation (anchors on the home page) ---------------------------
 # "anchor" must match a section id in index.md.
 nav:
-  - { label: "About",      anchor: "about" }
+  - { label: "About me",   anchor: "about" }
   - { label: "Tech stack", anchor: "tech-stack" }
   - { label: "Projects",   anchor: "projects" }
   - { label: "Education",  anchor: "education" }

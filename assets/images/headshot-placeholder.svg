@@ -1,17 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Headshot placeholder">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Placeholder for your profile photo">
+  <!-- PLACEHOLDER. To use your own photo: upload a square image (min 800 x 800 px) to assets/images/
+       and set profile_image in _config.yml to its file name. -->
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#BEBF88"/>
-      <stop offset="1" stop-color="#EEEBD3"/>
-    </linearGradient>
-    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#412C2B"/>
-      <stop offset="1" stop-color="#2B121A"/>
+      <stop offset="0" stop-color="#FFDA85"/>
+      <stop offset=".6" stop-color="#FFECC2"/>
+      <stop offset="1" stop-color="#E0DDE3"/>
     </linearGradient>
   </defs>
   <rect width="600" height="600" fill="url(#bg)"/>
-  <circle cx="470" cy="130" r="70" fill="#EEEBD3" opacity=".55"/>
-  <circle cx="110" cy="470" r="90" fill="#D6D5AE" opacity=".7"/>
-  <path d="M95 620 C95 470 190 395 300 395 C410 395 505 470 505 620 Z" fill="url(#body)"/>
-  <circle cx="300" cy="255" r="105" fill="url(#body)"/>
+  <circle cx="300" cy="300" r="228" fill="none" stroke="#1C0920" stroke-width="4" stroke-dasharray="4 16" stroke-linecap="round" opacity=".55"/>
+  <!-- camera icon -->
+  <g transform="translate(300 262)" fill="none" stroke="#1C0920" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M-78 -36h38l14 -22h52l14 22h38a14 14 0 0 1 14 14v84a14 14 0 0 1 -14 14h-156a14 14 0 0 1 -14 -14v-84a14 14 0 0 1 14 -14z"/>
+    <circle cx="0" cy="22" r="32"/>
+  </g>
+  <text x="300" y="392" text-anchor="middle" font-family="Aptos, 'Segoe UI', system-ui, sans-serif" font-size="38" font-weight="700" fill="#1C0920">Your photo here</text>
+  <text x="300" y="430" text-anchor="middle" font-family="Aptos, 'Segoe UI', system-ui, sans-serif" font-size="22" fill="#1C0920" opacity=".7">square · 800 px or larger</text>
 </svg>

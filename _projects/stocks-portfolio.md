@@ -7,8 +7,14 @@ period: "Mar – Jun 2025"
 context: "Chalmers University of Technology"
 tools: "Python"
 tags: ["Python", "Time series", "Sharpe ratio", "Mean-variance optimization"]
-cover: /assets/images/project-stocks.svg
+# ---- COVER IMAGE: how to change it ------------------------------------------
+# 1. Upload your image to assets/images/projects/  (best: 1600 x 1000 px, 16:10; JPG, PNG, WebP or SVG).
+# 2. Put its file name in `cover:` below. That's it: it updates the home-page card AND the top of this page.
+# 3. Optional: `cover_position` picks which part stays visible if the card crops the image
+#    (e.g. top, bottom, left, "center top"). Describe the image in `cover_alt` for screen readers.
+cover: /assets/images/projects/stocks-portfolio.svg
 cover_alt: "Illustration of several stock price lines with one bold line rising steadily and a widening shaded forecast cone to its right"
+cover_position: center   # optional
 # Fill these in when the repo / demo exist. Empty = the button shows "coming soon".
 code_url: ""      # e.g. https://github.com/floatzell/stocks-portfolio
 demo_url: ""      # e.g. a Streamlit or Hugging Face Space link

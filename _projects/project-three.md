@@ -8,8 +8,14 @@ period: "Mon YYYY – Mon YYYY"
 context: "Where / for whom"
 tools: "Python, …"
 tags: ["Python", "Tag", "Tag"]
-cover: /assets/images/project-placeholder-3.svg
+# ---- COVER IMAGE: how to change it ------------------------------------------
+# 1. Upload your image to assets/images/projects/  (best: 1600 x 1000 px, 16:10; JPG, PNG, WebP or SVG).
+# 2. Put its file name in `cover:` below. That's it: it updates the home-page card AND the top of this page.
+# 3. Optional: `cover_position` picks which part stays visible if the card crops the image
+#    (e.g. top, bottom, left, "center top"). Describe the image in `cover_alt` for screen readers.
+cover: /assets/images/projects/project-three.svg
 cover_alt: "Placeholder illustration with a dashed frame and a plus sign"
+cover_position: center   # optional
 code_url: ""
 demo_url: ""
 notebook_url: ""
